@@ -1,6 +1,7 @@
 
 function showAddress(userId){
-        var addressA = document.getElementById("address_a_"+ id);
+    console.log(userId);
+        var addressA = document.getElementById("address_a_"+ userId);
         addressA.style.display = 'none';
 
         console.log("clicked");
@@ -16,7 +17,7 @@ function showAddress(userId){
             console.log(this.status);
             if (request.readyState = 4 && request.status == 200) {
                 var myData = JSON.parse(request.responseText);
-                renderHtml(myData, id);
+                renderHtml(myData, userId);
             } else {
                 request.error = function () {
                     console.log("ERROR");

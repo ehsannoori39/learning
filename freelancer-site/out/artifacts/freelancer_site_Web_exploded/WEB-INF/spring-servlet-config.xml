@@ -39,8 +39,8 @@
           destroy-method="close">
         <property name="driverClass" value="com.mysql.jdbc.Driver" />
         <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/freelancer_site?useSSL=false" />
-        <property name="user" value="root" />
-        <property name="password" value="admin" />
+        <property name="user" value="essi" />
+        <property name="password" value="essi" />
 
         <!-- these are connection pool properties for C3P0 -->
 		<property name="initialPoolSize" value="5"/>
